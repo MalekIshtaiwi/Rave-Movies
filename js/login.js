@@ -2,19 +2,19 @@
 const loginForm = document.getElementById("loginForm"); // The login form element
 const emailInput = document.getElementById("Email"); // Input for the username or email
 const passwordInput = document.getElementById("Password"); // Input for the password
-const usernameError = document.getElementById("usernameError"); // Element to display username validation error messages
-const passwordError = document.getElementById("passwordError"); // Element to display password validation error messages
+const emailError = document.getElementById("emailError"); // Element to display username validation error messages
+
 
 // Regex for validation
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/; 
 // Regular expression to validate email format (e.g., user@example.com)
 
 // Event listeners for live validation
 emailInput.addEventListener("input", () => {
     if (emailRegex.test(emailInput.value)) { // Check if the email format is valid
-        usernameError.textContent = ""; // Clear error if valid
+        emailError.textContent = ""; // Clear error if valid
     } else {
-        usernameError.textContent = "Invalid email format."; // Show error if invalid
+        emailError.textContent = "Invalid email format."; // Show error if invalid
     }
 });
 

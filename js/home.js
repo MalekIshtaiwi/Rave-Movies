@@ -8,7 +8,8 @@ $(document).ready(function(){
         }
     });
     });
-
+    /*          */
+    const moviesContainer = document.getElementById("movies-container");
     const dramaArr = [];
     const actionArr = [];
     const comedyArr = [];
@@ -35,7 +36,7 @@ $(document).ready(function(){
             console.error(error);
         }
     }
-    const moviesContainer = document.getElementById("movies-container");
+
     function showMovies(movies){
         moviesContainer.innerHTML = ``;
         title = '';
@@ -331,4 +332,5 @@ $(document).ready(function(){
           });
         }
     }
+
 
