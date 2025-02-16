@@ -18,7 +18,7 @@ $(document).ready(function(){
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '1cba5780f4msh1e775f4503dbbcfp170377jsn5dcd7ceb9b14',
+            'x-rapidapi-key': 'x-rapidapi-key: 9dc003aa3amsh4a0559a39e34380p119f9ajsn15d20144cdac',
             'x-rapidapi-host': 'imdb236.p.rapidapi.com'
         }
     };
